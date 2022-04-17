@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+.news_index {
+  position: relative;
+  padding: 120px 24px;
+}
+.news_index h3 {
+  position: absolute;
+  top: 300px;
+  left: 70%;
+  font-size: 13.0rem;
+  transform: rotate(90deg);
+  color: #333;
+  font-weight: 500;
+}
+.news_img1 {
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 80px;
+  left: 20%;
+}
+.news_img2 {
+  width: 30%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 200px;
+  right: 25%;
+}
+.news-list_index {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+  padding: 20px 20px;
+}
+.date {
+  margin: 0;
+  font-size: 2.0rem;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.item {
+  display: flex;
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.item li {
+  list-style: none;
+}
+.item a {
+  background: #999;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-left: 50px;
+  color: #333;
+}
+.item_big_box {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+.wp_title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 20px 50px;
+  color: #333;
+}
+.wp_item_big_box {
+  padding: 20px 0;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+@media (min-width:1040px) {
+  .news_index {
+    padding: 700px 200px 100px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .news_index h3 {
+    font-size: 6.0rem;
+  }
+  .news-list_index .item a {
+    flex-wrap: wrap;
+  }
+  .news-list_index .item .date {
+    min-width: 100px;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .item_big_box {
+    display: block;
+  }
+}
+/* 装飾 */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width:959px) {
+  .news_img1 {
+    left: 0;
+    width: 70%;
+    height: 300px;
+  }
+  .news_img2 {
+    width: 70%;
+    height: 300px;
+    top: 200px;
+    right: 0;
+  }
+  .news_index h3 {
+    left: 10%;
+    top: 400px;
+    transform: rotate(0deg);
+    font-size: 6.0rem;
+  }
+  .news-list_index {
+    padding-top: 550px;
+    padding-bottom: 50px;
+  }
+  }
